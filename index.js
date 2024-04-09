@@ -6,3 +6,6 @@ const btnRemoveDice = document.querySelector('.btn--remove-dice');
 
 // Display
 const display = document.querySelector('.app__display');
+
+// Get random number from 1 to 6
+const getRandomNumber = () => Math.floor(Math.random() * 6) + 1;
