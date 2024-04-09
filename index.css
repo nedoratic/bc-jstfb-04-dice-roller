@@ -41,24 +41,6 @@ body {
 	font-size: 20rem;
 }
 
-@media (max-width: 768px) {
-	.app__display {
-		font-size: 10rem;
-	}
-}
-
-@media (max-width: 480px) {
-	.app__display {
-		font-size: 8rem;
-	}
-}
-
-@media (max-height: 500px) {
-	.app__display {
-		font-size: 10rem;
-	}
-}
-
 .app__buttons,
 .app__display {
 	display: flex;
@@ -82,4 +64,32 @@ body {
 .btn:focus {
 	outline: none;
 	border-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+	.app__display {
+		font-size: 10rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.app__display {
+		font-size: 8rem;
+	}
+	.btn {
+		width: 4em;
+		height: 4em;
+		margin: 0.5em;
+		padding: 1em;
+		background: transparent;
+		border: 1px solid var(--secondary-color);
+		border-radius: 50%;
+		cursor: pointer;
+	}
+}
+
+@media (max-height: 500px) {
+	.app__display {
+		font-size: 10rem;
+	}
 }
