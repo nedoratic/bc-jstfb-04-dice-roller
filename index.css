@@ -1,0 +1,85 @@
+/* Global Reset */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Variables */
+:root {
+	--font-family: 'Montserrat', sans-serif;
+	--primary-color: #333333;
+	--secondary-color: #dddddd;
+	--tertiary-color: #f7f7f7;
+}
+
+/* Base Styles */
+html {
+	font-family: var(--font-family);
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: var(--tertiary-color);
+	color: var(--primary-color);
+}
+
+/* App Styles */
+.app {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.app__display {
+	font-size: 20rem;
+}
+
+@media (max-width: 768px) {
+	.app__display {
+		font-size: 10rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.app__display {
+		font-size: 8rem;
+	}
+}
+
+@media (max-height: 500px) {
+	.app__display {
+		font-size: 10rem;
+	}
+}
+
+.app__buttons,
+.app__display {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Button Styles */
+.btn {
+	width: 5em;
+	height: 5em;
+	margin: 1em;
+	padding: 1.4em;
+	background: transparent;
+	border: 1px solid var(--secondary-color);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+	outline: none;
+	border-color: var(--primary-color);
+}
