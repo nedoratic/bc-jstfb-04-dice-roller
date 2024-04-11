@@ -17,3 +17,9 @@ const addDice = () => {
 	dice.innerHTML = rollDice();
 	display.appendChild(dice);
 };
+
+// Remove Dice
+const removeDice = () => {
+	const dice = document.querySelector('.dice');
+	display.removeChild(dice);
+};
