@@ -42,3 +42,9 @@ const rollDice = () => {
 		dice.innerHTML = `<img src="${imgSrc}" alt="Dice ${number}" />`;
 	});
 };
+
+// Event Listeners
+btnAddDice.addEventListener('click', addDice);
+btnRemoveDice.addEventListener('click', removeDice);
+btnReset.addEventListener('click', reset);
+btnRollDice.addEventListener('click', rollDice);
