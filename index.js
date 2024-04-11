@@ -14,14 +14,18 @@ const getRandomNumber = () => Math.floor(Math.random() * 6) + 1;
 const addDice = () => {
 	const dice = document.createElement('div');
 	dice.classList.add('dice');
-	dice.innerHTML = rollDice();
+	const number = getRandomNumber();
+	const imgSrc = `./img/${number}.svg`;
+	dice.innerHTML = `<img src="${imgSrc}" alt="Dice ${number}" />`;
 	display.appendChild(dice);
 };
 
 // Remove Dice
 const removeDice = () => {
 	const dice = document.querySelector('.dice');
-	display.removeChild(dice);
+	if (dice) {
+		display.removeChild(dice);
+	}
 };
 
 // Reset
