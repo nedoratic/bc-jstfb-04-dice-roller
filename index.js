@@ -32,3 +32,13 @@ const removeDice = () => {
 const reset = () => {
 	display.innerHTML = '';
 };
+
+// Roll Dice
+const rollDice = () => {
+	const diceElements = document.querySelectorAll('.dice');
+	diceElements.forEach((dice) => {
+		const number = getRandomNumber();
+		const imgSrc = `./img/${number}.svg`;
+		dice.innerHTML = `<img src="${imgSrc}" alt="Dice ${number}" />`;
+	});
+};
