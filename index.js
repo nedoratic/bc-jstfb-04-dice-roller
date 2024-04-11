@@ -23,3 +23,8 @@ const removeDice = () => {
 	const dice = document.querySelector('.dice');
 	display.removeChild(dice);
 };
+
+// Reset
+const reset = () => {
+	display.innerHTML = '';
+};
