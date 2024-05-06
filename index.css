@@ -4,6 +4,7 @@
 *::after {
 	box-sizing: border-box;
 	margin: 0;
+	/* border: 1px solid red; */
 	padding: 0;
 }
 
@@ -48,7 +49,6 @@ body {
 	width: 5em;
 	height: 5em;
 	margin: 0.5em;
-	/* border: 1px solid var(--secondary-color); */
 	border-radius: 50%;
 	display: flex;
 	justify-content: center;
@@ -85,30 +85,16 @@ body {
 	border-color: var(--primary-color);
 }
 
-@media (max-width: 768px) {
-	.app__display {
-		font-size: 10rem;
-	}
-}
-
-@media (max-width: 480px) {
-	.app__display {
-		font-size: 8rem;
-	}
+@media (max-width: 400px) {
 	.btn {
 		width: 4em;
 		height: 4em;
 		margin: 0.5em;
-		padding: 1em;
-		background: transparent;
-		border: 1px solid var(--secondary-color);
-		border-radius: 50%;
-		cursor: pointer;
 	}
-}
-
-@media (max-height: 500px) {
 	.app__display {
-		font-size: 10rem;
+		font-size: 0.8rem;
+	}
+	.dice {
+		margin: 0rem;
 	}
 }
